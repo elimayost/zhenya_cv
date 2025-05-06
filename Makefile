@@ -29,6 +29,7 @@ deploy:
 	@-cp pdf/evgeniiabaianova-cv.pdf docs/evgeniiabaianova-cv.pdf
 	@-sed -i '' "s/href='\/pdf'/href='evgeniiabaianova-cv.pdf'/" docs/*.html
 	@-echo "evgeniiabaianova.com" > docs/CNAME
+	@-echo "www.evgeniiabaianova.com" >> docs/CNAME
 	@-git add .
 	@-git commit -m 'backup'
 	@-git push
